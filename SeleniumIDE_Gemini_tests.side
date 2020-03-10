@@ -1,0 +1,259 @@
+{
+  "id": "553de257-508e-4a4b-9278-22daced1236c",
+  "version": "2.0",
+  "name": "Gemini_tests",
+  "url": "https://www.aptekagemini.pl",
+  "tests": [{
+    "id": "a3640acd-ab73-4ce0-be86-4ff2692aa5d6",
+    "name": "Scenario2_TC_1",
+    "commands": [{
+      "id": "6cb9cebf-9254-44ac-ae62-2f372669eb42",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "566e2876-8050-4293-bb3e-88e0d5c19008",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1649x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05d23c3c-74fb-4b35-b1db-0754c6815d25",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-button-grid > span",
+      "targets": [
+        ["css=.nav-button-grid > span", "css:finder"],
+        ["xpath=//div[@id='overbaner']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51be7792-4c79-4a38-9cfa-42ff5113997b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Zaloguj się')]", "xpath:link"],
+        ["xpath=//ul[@id='login-dropdown']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/user/loginUser')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0f98ebb0-0260-42e3-81fc-df484553ee23",
+      "comment": "",
+      "command": "click",
+      "target": "id=st_form-user-email",
+      "targets": [
+        ["id=st_form-user-email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#st_form-user-email", "css:finder"],
+        ["xpath=//input[@id='st_form-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "597a5563-b17c-4f5a-a194-eeaa21602aa0",
+      "comment": "",
+      "command": "type",
+      "target": "id=st_form-user-email",
+      "targets": [
+        ["id=st_form-user-email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#st_form-user-email", "css:finder"],
+        ["xpath=//input[@id='st_form-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "aka@wp.pl"
+    }, {
+      "id": "49389c5d-1807-449e-908b-4b142b1176cc",
+      "comment": "",
+      "command": "type",
+      "target": "id=st_form-user-password",
+      "targets": [
+        ["id=st_form-user-password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#st_form-user-password", "css:finder"],
+        ["xpath=//input[@id='st_form-user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "123456"
+    }, {
+      "id": "dfd9ea6f-ef9a-4703-abbd-a025d54a135b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.act_button:nth-child(1)",
+      "targets": [
+        ["css=.act_button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='st_button-user-login_success']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj do konta apteki')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7fa4d0e6-e005-4d20-89fc-7ce428747b71",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.log",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d53e6ab4-1434-4f4b-9545-e2f2c00662f5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Wyloguj się",
+      "targets": [
+        ["linkText=Wyloguj się", "linkText"],
+        ["css=a:nth-child(7)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Wyloguj się')])[2]", "xpath:link"],
+        ["xpath=//div[@id='overbaner']/div/div/div/a[6]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://www.aptekagemini.pl/user/logoutUser')])[2]", "xpath:href"],
+        ["xpath=//a[6]", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a379e1e-86f0-467c-ba34-0a57d973d31d",
+    "name": "Scenario2_TC_4",
+    "commands": [{
+      "id": "ec36b92f-c82d-4b0f-a470-accf659e59a1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3fa9edb6-138d-4a55-8c7f-95c74c67456f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1649x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11bbf1f0-45a4-4364-9b75-acc54dfcf246",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-button-grid > span",
+      "targets": [
+        ["css=.nav-button-grid > span", "css:finder"],
+        ["xpath=//div[@id='overbaner']/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Konto')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d6d8b761-5f0b-43f1-8a5c-0a4df3e6f253",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Zaloguj się",
+      "targets": [
+        ["linkText=Zaloguj się", "linkText"],
+        ["css=li:nth-child(1) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Zaloguj się')]", "xpath:link"],
+        ["xpath=//ul[@id='login-dropdown']/li/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aptekagemini.pl/user/loginUser')]", "xpath:href"],
+        ["xpath=//li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Zaloguj się')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3af9a432-76c0-4fe0-9728-a7f14406ca50",
+      "comment": "",
+      "command": "click",
+      "target": "id=st_form-user-email",
+      "targets": [
+        ["id=st_form-user-email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#st_form-user-email", "css:finder"],
+        ["xpath=//input[@id='st_form-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba85aa48-9a22-41e5-aaf5-8104ce8aa4a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=st_form-user-email",
+      "targets": [
+        ["id=st_form-user-email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#st_form-user-email", "css:finder"],
+        ["xpath=//input[@id='st_form-user-email']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "aka@wp.pl"
+    }, {
+      "id": "89eebdca-c98f-47ce-8626-bca0177a4598",
+      "comment": "",
+      "command": "click",
+      "target": "id=st_form-user-password",
+      "targets": [
+        ["id=st_form-user-password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#st_form-user-password", "css:finder"],
+        ["xpath=//input[@id='st_form-user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a64b336-53a1-46d8-9f4a-60dc0d6dc423",
+      "comment": "",
+      "command": "type",
+      "target": "id=st_form-user-password",
+      "targets": [
+        ["id=st_form-user-password", "id"],
+        ["name=user[password]", "name"],
+        ["css=#st_form-user-password", "css:finder"],
+        ["xpath=//input[@id='st_form-user-password']", "xpath:attributes"],
+        ["xpath=//div[@id='login-user']/form/fieldset/div[2]/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "636363"
+    }, {
+      "id": "076eb5c6-b6af-44e6-b6af-7c38d15f98af",
+      "comment": "",
+      "command": "click",
+      "target": "css=.act_button:nth-child(1)",
+      "targets": [
+        ["css=.act_button:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='st_button-user-login_success']/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Zaloguj do konta apteki')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb032617-1c86-4f98-a95f-aac9c23ddeca",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.error_tooltip",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "63160aab-42f6-4924-b46a-32a986e957e4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a3640acd-ab73-4ce0-be86-4ff2692aa5d6"]
+  }],
+  "urls": ["https://www.aptekagemini.pl/"],
+  "plugins": []
+}
